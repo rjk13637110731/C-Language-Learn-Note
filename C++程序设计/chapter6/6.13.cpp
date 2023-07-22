@@ -13,8 +13,8 @@ int main() {
 	*p2 = '\0';
 	p1 = str1;
 	p2 = str2;
-	cout << "str1 is: " << str1 << endl;
-	cout << "str2 is: " << str2 << endl;
+	cout << "str1 is: " << p1 << endl;
+	cout << "str2 is: " << p2 << endl;
 
 	return 0;
 }
