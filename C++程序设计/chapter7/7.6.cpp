@@ -18,5 +18,7 @@ int main() {
 
 	cout << p->name << " " << p->num << " " << p->sex << endl;
 
+	delete p;
+
 	return 0;
 }
