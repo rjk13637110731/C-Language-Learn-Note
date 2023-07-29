@@ -35,5 +35,8 @@ int main() {
 	t1.set_time();
 	t1.show_time();
 
+	Time t2;
+	t2.show_time();
+
 	return 0;
 }
