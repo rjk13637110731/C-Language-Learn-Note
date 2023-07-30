@@ -1,0 +1,39 @@
+# include <iostream>
+
+using namespace std;
+
+class Time {
+public:
+	Time(int, int, int);
+	int hour;
+	int minute;
+	int second;
+	void get_time();
+};
+
+Time::Time(int h,int m,int s) {
+	hour = h;
+	minute = m;
+	second = s;
+}
+
+void Time::get_time() {
+	cout << this->hour << ":" << this->minute << ":" << this->second << endl;
+}
+
+int main() {
+	
+	Time t1(10,13,56);
+	int* p1 = &t1.hour;
+	cout << *p1 << endl;
+
+	t1.get_time();
+
+	Time* p2 = &t1;
+	p2->get_time();
+	void (Time::*p3)();
+	p3 = &Time::get_time;
+	(t1.*p3)();
+
+	return 0;
+}
