@@ -27,6 +27,9 @@ int main() {
 	Box box1(15, 20),box2(20,30);
 	cout << "The volume of box1 is " << box1.volume() << endl;
 	cout << "The volume of box2 is " << box2.volume() << endl;
+	cout << box1.height << endl;
+	cout << box2.height << endl;
+	cout << Box::height << endl;
 
 	return 0;
 }
