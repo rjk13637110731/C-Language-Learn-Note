@@ -5,7 +5,7 @@
 using namespace std;
 
 struct Student {
-	string name;
+	char name[20];
 	int num;
 	int age;
 	char sex;
@@ -33,6 +33,7 @@ int main() {
 		cout << "num:" << stud[i].num << endl;
 		cout << "age:" << stud[i].age << endl;
 		cout << "sex:" << stud[i].sex << endl;
+		cout << endl;
 	}
 
 	return 0;
