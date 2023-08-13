@@ -4,9 +4,13 @@
 using namespace std;
 
 int main() {
-	Student stud1(101, "Wang", 18);
+	ns1::Student stud1(101, "Wang", 18);
 	stud1.get_data();
-	cout << fun(5, 3) << endl;
+	cout << ns1::fun(5, 3) << endl;
+
+	ns2::Student stud2(102, "Li", 'f');
+	stud2.get_data();
+	cout << ns2::fun(5, 3) << endl;
 
 	return 0;
 }
